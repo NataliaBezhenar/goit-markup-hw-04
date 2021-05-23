@@ -73,13 +73,16 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* ******* END COMPONENTS ******* */
+
+
+/* ******* SOCIAL LINKS ******* */
 .social-icons-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
 }
+
 .social-list-icon {
   width: 20px;
   height: 20px;
@@ -95,7 +98,8 @@ img {
   align-items: center;
 }
 
-.social-icons-list-item-link:hover {
+.social-icons-list-item-link:hover,
+.social-icons-list-item-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -104,7 +108,23 @@ img {
   fill: var(--primary-white-color);
 }
 
-/* ******* END COMPONENTS ******* */
+.social-icons-list-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.social-links-footer .social-icons-list-item-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-links-footer .social-icons-list-item-link:hover,
+.social-links-footer .social-icons-list-item-link:focus {
+  background: var(--accent-color);
+}
+
+.social-links-footer  .social-list-icon {
+  fill: var(--primary-white-color)
+}
+/* ******* END SOCIAL LINKS ******* */
 
 /* *********** HEADER *********** */
 .header .container {
@@ -337,6 +357,8 @@ img {
   padding-bottom: 30px;
   width: 270px;
   text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-list {
@@ -469,6 +491,7 @@ img {
 /* ********* FOOTER ********** */
 .footer {
   background-color: var(--hero-background-color);
+  color: var(--primary-white-color);
   padding-bottom: 60px;
   padding-top: 60px;
 }
@@ -478,14 +501,30 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 20px;
+  margin-right: 70px;
 }
 
 .studio-location {
-  color: var(--primary-white-color);
+  margin-top: 20px;
 }
 
 .footer-contact-link {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.social-links-footer {
+  margin-top: 15px;
+} 
+.socia-links-title-footer {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.address-and-social {
+  display: flex;
+}
+
 /* ********* END FOOTER ********** */
