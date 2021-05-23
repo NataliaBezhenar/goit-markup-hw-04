@@ -8,7 +8,7 @@
   --background-grey-color: #f5f4fa;
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --social-links-grey_color: #afb1b8;
+  --social-links-color: #afb1b8;
 }
 /* ***** GENERAL ***** */
 body {
@@ -83,7 +83,7 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: var(--social-links-grey_color);
+  fill: var(--social-links-color);
 }
 .social-icons-list-item-link {
   width: 44px;
@@ -372,6 +372,48 @@ img {
 }
 
 /* ********** END TEAM ********** */
+
+/* ********** CLIENTS ********** */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.client-item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.client-box {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-links-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-icon {
+  fill: var(--social-links-color);
+  object-fit: cover;
+}
+
+.client-box:hover .client-icon,
+.client-box:focus .client-icon {
+  fill: var(--accent-color);
+}
+
+.client-box:hover,
+.client-box:focus {
+  border: 1px solid var(--accent-color);
+}
+
+/* ********** END CLIENTS ********** */
 
 /* ********* PORTFOLIO ********** */
 
