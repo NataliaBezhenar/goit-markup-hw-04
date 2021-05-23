@@ -184,10 +184,11 @@ img {
   fill: currentColor;
 }
 
-.auth-list-item {
+.auth-list .auth-list-link {
   display: flex;
   align-items: center;
 }
+
 /* ********** END HEADER ********** */
 
 /* *********** LOGO *********** */
@@ -234,6 +235,7 @@ img {
   margin: 0 auto;
   display: block;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-filter {
@@ -249,6 +251,8 @@ img {
 .btn-filter:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ********** END BUTTONS ********** */
 
