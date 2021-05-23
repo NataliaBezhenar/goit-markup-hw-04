@@ -76,7 +76,6 @@ img {
 
 /* ******* END COMPONENTS ******* */
 
-
 /* ******* SOCIAL LINKS ******* */
 .social-icons-list {
   display: flex;
@@ -108,7 +107,7 @@ img {
   fill: var(--primary-white-color);
 }
 
-.social-icons-list-item:not(:last-child){
+.social-icons-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -121,8 +120,8 @@ img {
   background: var(--accent-color);
 }
 
-.social-links-footer  .social-list-icon {
-  fill: var(--primary-white-color)
+.social-links-footer .social-list-icon {
+  fill: var(--primary-white-color);
 }
 /* ******* END SOCIAL LINKS ******* */
 
@@ -486,6 +485,11 @@ img {
   padding: 20px 24px;
 }
 
+.cards-item:hover,
+.cards-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* ********* END PORTFOLIO ********** */
 
 /* ********* FOOTER ********** */
@@ -514,7 +518,8 @@ img {
 
 .social-links-footer {
   margin-top: 15px;
-} 
+}
+
 .socia-links-title-footer {
   text-transform: uppercase;
   font-weight: 700;
