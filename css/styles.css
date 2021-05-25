@@ -437,7 +437,7 @@ img {
 
 .client-link:hover,
 .client-link:focus {
-  border-color: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* ********** END CLIENTS ********** */
