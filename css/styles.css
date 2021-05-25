@@ -306,6 +306,7 @@ img {
   height: 120px;
   background-color: var(--background-grey-color);
   margin-bottom: 30px;
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
 }
@@ -403,6 +404,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .clients-list {
   display: flex;
   margin-top: -30px;
@@ -413,29 +415,29 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
-.client-box {
+
+.client-link {
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-links-color);
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .client-icon {
   fill: var(--social-links-color);
-  object-fit: cover;
+  margin: auto;
 }
 
-.client-box:hover .client-icon,
-.client-box:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
-.client-box:hover,
-.client-box:focus {
-  border: 1px solid var(--accent-color);
+.client-link:hover,
+.client-link:focus {
+  border-color: 1px solid var(--accent-color);
 }
 
 /* ********** END CLIENTS ********** */
@@ -489,8 +491,8 @@ img {
   padding: 20px 24px;
 }
 
-.cards-item:hover,
-.cards-item:focus {
+.card-link:hover .card-signature,
+.card-link:focus .card-signature {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
